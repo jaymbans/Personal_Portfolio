@@ -13,10 +13,12 @@ body a{
   color: black;
 }
 
+
+
 .backdrop-stripe {
-  height: 100%;
+  height: 4000px;
   width: 15%;
-  background-color: rgb(17, 0, 255);
+  background-color: rgb(137, 186, 201);
   position: absolute;
   z-index: 1;
   top: 0px;
@@ -27,7 +29,7 @@ body a{
   z-index: 2;
   position: relative;
   margin-top: 35px;
-  height: 1200px;
+  height: 4000px;
   width: 1200px;
   background-color: rgb(255, 255, 255);
   box-shadow: 7px 7px black, -7px 7px 7px black;
@@ -43,6 +45,7 @@ header {
   display: flex;
   justify-content:center;
   background-color: rgb(255, 255, 255);
+  height: 4.5rem;
 }
 
 /* FLOATING FOOTERS */
@@ -53,10 +56,11 @@ header {
   height: auto;
   width: 45px;
   position: fixed;
-  bottom: 3rem;
+  bottom: 1rem;
   border-radius: 50%;
   border: solid black;
   padding: 5px;
+  z-index: 10;
 }
 
 
@@ -193,4 +197,87 @@ header {
   height: 2rem;
   width: auto;
   transform: rotate(90deg);
+}
+
+
+/* TIMELINE SECTION */
+.timeline {
+  /* background-color: red; */
+  height: 1200px;
+}
+
+.heading-placeholder {
+  background-color: white;
+  height: 4rem;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid black;
+  margin-top: 5rem;
+}
+
+.timeline-title {
+  font-size: 40px;
+  font-family: Arial;
+  letter-spacing: .2rem;
+  border-bottom-style: ridge;
+  border-color: silver;
+}
+
+.experience-title {
+  color: gray;
+  font-size: 1.4rem;
+}
+
+.timeline-items {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.timeline-item {
+  height: 10rem;
+  width: 10rem;
+  border: solid black;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+
+.bottom-item {
+  margin-top: 20rem;
+}
+
+.blip {
+  height: 3rem;
+  width: 5px;
+  background: gray;
+  position: absolute;
+  display: flex;
+  align-self: center;
+  border-radius: 10px;
+}
+
+.top-item .blip {
+  margin-top: 11rem;
+}
+.bottom-item .blip {
+  top: -4rem;
+}
+
+.timeline-bar {
+  width: 98%;
+  height: 7px;
+  border-radius: 5px;
+  background: black;
+  position: absolute;
+  bottom: 50%;
 }

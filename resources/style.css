@@ -188,15 +188,17 @@ header {
   right: 40px;
   opacity: .4;
   top: 120px;
+  background-blend-mode: saturation;
 }
 
 #homepage-arrow {
   position: fixed;
   bottom: 10px;
-  left: 50%;
+  left: 49%;
   height: 2rem;
   width: auto;
   transform: rotate(90deg);
+  z-index: 10;
 }
 
 
@@ -217,6 +219,8 @@ header {
   align-items: center;
   border: solid black;
   margin-top: 5rem;
+  /* background: rgb(54, 52, 52); */
+  background: linear-gradient(rgb(54, 52, 52), rgb(104, 104, 104));
 }
 
 .timeline-title {
@@ -225,16 +229,18 @@ header {
   letter-spacing: .2rem;
   border-bottom-style: ridge;
   border-color: silver;
+  color: rgb(230, 230, 230)
 }
 
 .experience-title {
-  color: gray;
+  color: rgb(230, 230, 230);
   font-size: 1.4rem;
 }
 
 .timeline-items {
   display: flex;
-  justify-content: space-around;
+  flex-direction:  column;
+  align-items: center;
   width: 100%;
   margin-top: 5rem;
   position: relative;
@@ -242,42 +248,97 @@ header {
 
 .timeline-item {
   height: 10rem;
-  width: 10rem;
-  border: solid black;
-  border-radius: 5%;
+  width: 25rem;
+  border: solid rgb(48, 48, 48);
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  color: rgb(230, 230, 230);
+  background: rgb(71, 71, 71);
+}
+
+.timeline-item h4,
+.timeline-item img {
+  margin-bottom: 0px;
+  text-align: center;
+}
+.timeline-item h6 {
+  margin-bottom: 5px;
+}
+
+.year-left {
+  color: rgb(230, 230, 230);
+  z-index: 2;
+  /* margin-right: 50rem;
+  margin-bottom: 10px; */
+  background: gray;
+  padding: 4px;
+  border-radius: 5px;
+  
+}
+.year-right {
+  color: rgb(230, 230, 230);
+  /* margin-left: 50rem;
+  margin-bottom: 10px; */
+  z-index: 2;
+  background: gray;
+  padding: 4px;
+  border-radius: 5px;
 }
 
 
+
+
+.top-item {
+  margin-right: 40rem;
+  border-radius: 30px 0 30px 30px;
+}
 .bottom-item {
-  margin-top: 20rem;
+  margin-left: 40rem;
+  border-radius: 0 30px 30px 30px;
 }
 
 .blip {
-  height: 3rem;
-  width: 5px;
-  background: gray;
+  height: 1rem;
+  width: 1rem;
   position: absolute;
   display: flex;
   align-self: center;
-  border-radius: 10px;
+  border-radius: 50%;
+  border: rgb(172, 172, 172) solid 3px;
+  background: white;
+  z-index: 2;
+  /* bottom: 50%; */
 }
 
 .top-item .blip {
-  margin-top: 11rem;
+  margin-left: 40rem;
 }
 .bottom-item .blip {
-  top: -4rem;
+  margin-right: 40rem;
 }
 
+
 .timeline-bar {
-  width: 98%;
-  height: 7px;
-  border-radius: 5px;
-  background: black;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background: rgb(230, 230, 230);
   position: absolute;
-  bottom: 50%;
+  bottom: 54%;
+  transform: rotate(90deg);
+}
+
+.timeline-item img {
+  height: 50px;
+  width: 50px;
+  border-radius:50%;
+  background: rgb(230, 230, 230);
+  border: rgb(172, 172, 172) solid 1.5px;
+  
+}
+
+.second-line {
+  margin-top: 0;
 }

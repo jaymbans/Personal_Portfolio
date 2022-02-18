@@ -9,7 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Space+Mono&display=swap" rel="stylesheet">
-  <script src="./resources/index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Rubik&family=Space+Mono&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -22,13 +25,13 @@
           <h4><a href="#">Jordan Mbanefo</a></h4>
         </div>
         <ul class="navbar-list">
-          <li><a class="nav-links" href="#">
+          <li><a class="nav-links" href="#location-timeline">
               <h4>Resume & Experience</h4>
             </a></li>
-          <li><a class="nav-links" href="#">
+          <li><a class="nav-links" href="#location-projects">
               <h4>Projects</h4>
             </a></li>
-          <li><a class="nav-links" href="#">
+          <li><a class="nav-links" href="#location-about">
               <h4>About</h4>
             </a></li>
         </ul>
@@ -49,31 +52,37 @@
     <section class="homepage">
       <div class="title-area">
         <h3 id="name">Jordan Mbanefo</h3>
-        <h1 class="profession">Self Taught Developer and</h1>
-        <h1 class="profession">Problem Solver</h1>
-        <p class='title-desc'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam suscipit exercitationem
-          aliquam vitae
-          reprehenderit, expedita in. Incidunt tempore eveniet deserunt harum. Ut vero maxime consectetur reprehenderit
-          adipisci! Officia, illum dolores.</p>
+        <h1 class="profession">Self Taught <span id="typer"></span></h1>
+        <p class='title-desc'>I'm Jordan, a self taught programmer based out of New York City. Whilst graduating from
+          Villanova's
+          School of Business, I was able to leverage my leisure time to learn programming skills that
+          I now
+          use full time to ensure efficiency and effectiveness on a day to day basis.</p>
         <div class="title-buttons">
           <a href="#" class="about btn">Learn About Me</a>
           <a href="#" class="projects btn">View Projects</a>
         </div>
       </div>
-      <div class="headshot-overlay"></div>
+      <div class="headshot-overlay1"></div>
+      <div class="headshot-overlay2"></div>
+      <div class="headshot-overlay3"></div>
+      <div class="headshot-overlay4"></div>
+      <div class="headshot-overlay5"></div>
+      <div class="headshot-overlay6"></div>
+      <div class="headshot-overlay7"></div>
       <div class="headshot-container"></div>
-      <a href="#" id="down-arrow-home">
-        <img src="./resources/images/arrow.jpeg" alt="" id="homepage-arrow">
+      <a href="#location-timeline" id="down-arrow-home">
+        <img src="./resources/images/mouse-scroll.gif" alt="" id="homepage-arrow">
       </a>
     </section>
-    <section class="timeline">
+    <section class="timeline" id="location-timeline">
       <div class="heading-placeholder"> </div>
       <div class="timeline-content">
         <div class="timeline-header">
           <p class="experience-title">
             Experience <span class="resume-here">Resume Here</span>
           </p>
-          <h1 class="timeline-title">Technological Timeline</h1>
+          <h1 class="timeline-title">Knowledge Timeline</h1>
         </div>
         <div class="timeline-items">
           <h4 class="year-left">Summer 2018</h4>
@@ -88,7 +97,7 @@
           </div>
           <h4 class="year-right">Summer 2019</h4>
           <div class="timeline-item bottom-item">
-            <h4>Tax & Accounting Intern</h4>
+            <h4>Tax & Assurance Accounting Intern</h4>
             <h6>Ernst & Young</h6>
             <div class="tech-icon">
               <img src="./resources/images/vba-logo.png" alt="">
@@ -115,8 +124,8 @@
           </div>
           <h4 class="year-left">Summer 2020 - Summer 2021</h4>
           <div class="timeline-item top-item">
-            <h4>Programming For Adaptive Problem Solving</h4>
-            <h4 class="second-line">Introduction into Maching Learning</h4>
+            <h4 id="first-line">Programming For Adaptive Problem Solving & Introduction into Maching Learning</h4>
+            <!-- <h4 id="second-line"></h4> -->
             <div class="tech-icon"></div>
             <h6>Student: Villanova University</h6>
             <div class="tech-icon">
@@ -143,19 +152,19 @@
     </section>
     <section class="projects">
       <div class="projects-background">
-        <h1 class="projects-title">Projects</h1>
+        <h1 class="projects-title" id="location-projects">Projects</h1>
       </div>
       <div class="projects-grid">
         <div class="project-item">
           <div class="project-image">
-            <h3 class="proj-name">Project Name</h3>
+            <h3 class="proj-name">GME Predictive Algorithm</h3>
           </div>
           <div class="project-description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis, porro veritatis a harum, repellat
-              esse, quia reiciendis quos consectetur nihil quod libero autem iure itaque deserunt natus sapiente. A!</p>
+            <p>Developed Machine learning algorithm, utilizing natural language processing on Reddit posts to see how
+              they influenced GameStop stock movement </p>
           </div>
           <div class="tech-used">
-            <p>Tech Used:</p>
+            <p>Tech Used: Python, Jupyter, Google Colab</p>
           </div>
         </div>
         <div class="project-item">
@@ -163,8 +172,8 @@
             <h3 class="proj-name">Project Name</h3>
           </div>
           <div class="project-description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis, porro veritatis a harum, repellat
-              esse, quia reiciendis quos consectetur nihil quod libero autem iure itaque deserunt natus sapiente. A!</p>
+            <p>Developed Machine learning algorithm, utilizing natural language processing to of Reddit tweets and how
+              they influenced GameStop stock movement</p>
           </div>
           <div class="tech-used">
             <p>Tech Used:</p>
@@ -241,20 +250,17 @@
           </div>
         </div>
 
-        <div class="about-me-content">
+        <div class="about-me-content" id="location-about">
           <div class="about-me-title">
             <h1>Learn About my Journey!</h1>
           </div>
           <div class="about-me-default-description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste laborum mollitia qui. Laudantium
-              molestiae voluptatum nesciunt repellendus suscipit inventore odit ipsa eos facere provident possimus
-              totam distinctio, perspiciatis cupiditate.
-              Aliquam quisquam ipsa inventore illo voluptatibus quis rem sunt dicta, explicabo, maiores laboriosam
-              impedit. Commodi deleniti corrupti eligendi quis deserunt minima quia nemo odit mollitia, voluptatem, ea
-              quibusdam porro iusto!
-              Vitae quisquam in, corrupti, fugiat adipisci facilis at repellendus modi hic numquam quos maxime
-              perspiciatis doloremque, nostrum obcaecati cupiditate fugit laudantium esse iste? Dolores, officia vel
-              iure aperiam error at!</p>
+            <p>From a young age, I was taught to be independent. Independence requires taking
+              risks, challenging yourself, and throwing yourself in the deep end. From learning to cut my hair in
+              highschool, and creating a business out of it in college - to using my free time to learn to program and
+              switch into a career in tech - I have tried to challenge myself to be an everlasting learner in all facets
+              of life.</p>
+            <p>Please take the time to look at the pillars that have created who I am today</p>
           </div>
 
           <h3>Click Below</h3>
@@ -290,9 +296,9 @@
       <p class="email">jmbanefo@villanova.edu</p>
     </footer>
   </div>
-
-
   </div>
 </body>
+
+<script src="./resources/index.js"></script>
 
 </html>

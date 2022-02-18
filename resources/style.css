@@ -1,14 +1,22 @@
-body {
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: rgb(56, 56, 56); */
-  background-color: rgb(43, 43, 43);
+  /* background: url(./images/shadowbackground.jpeg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(rgb(102, 110, 117), rgb(180, 180, 182));
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  /* background-color: rgb(80, 80, 80); */
   display: flex;
   justify-content: center;
   color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  height: auto;
+  height: 4350px;
   position: relative;
 }
 body a{
@@ -17,11 +25,11 @@ body a{
 }
 
 
-/* 
-.backdrop-stripe {
+
+/* .backdrop-stripe {
   height: 100%;
   width: 15%;
-  background-color: rgb(116, 157, 170);
+  background-color: rgb(144, 189, 183);
   position: absolute;
   z-index: 1;
   top: 0px;
@@ -32,10 +40,10 @@ body a{
   z-index: 2;
   position: relative;
   margin-top: 35px;
-  height: 4000px;
+  height: auto;
   width: 1200px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 7px 7px black, -7px 7px 7px black;
+  box-shadow: 7px 7px rgba(255, 255, 255,0), -7px 7px 7px black;
   color: black;
   border-radius: 5px;
 }
@@ -47,7 +55,7 @@ header {
   border-radius: 5;
   display: flex;
   justify-content:center;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(255, 255, 255), rgb(247, 247, 247));
   height: 4.5rem;
   border-radius: 0 0 5px 5px;
 }
@@ -92,6 +100,8 @@ header {
   align-content: center;
 }
 
+
+
 .contact-heading #j-logo {
   height: auto;
   width: 1.1rem;
@@ -124,16 +134,12 @@ header {
   align-items: center;
 }
 
-.navbar-list li:hover {
-  border-bottom: rgb(168, 0, 0) solid;
-  border-width: 5px;
-}
+
 
 
 
 /* homepage area */
 .homepage {
-  /* background-color: red; */
   width: 100%;
   height: 650px;
   display: flex;
@@ -146,8 +152,10 @@ header {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  margin-bottom: 100px;
+  justify-content: center;
+  margin-top: 200px;
+  /* background: red; */
+  padding-left: 70px;
 }
 
 #name, 
@@ -167,7 +175,7 @@ header {
 
 .title-buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -179,37 +187,60 @@ header {
   margin: 10px 20px;
   color: black;
   text-decoration: none;
-  font-size: 1.05rem;
-  font-weight: 900;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: solid black;
 }
+
+/* HEADSHOT SECTION */
 
 .headshot-container {
   width: 50%;
-  background-image: url(./images/laptop.jpeg);
+  background-image:url(./images/crop2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
   position: absolute;
   height: 600px;
   right: 40px;
-  opacity: .7;
   top: 120px;
-  background-blend-mode: saturation;
-  /* box-shadow: 10px 5px 5px white; */
-  border-radius: 0 0 100% 100%;
+}
+
+
+.headshot-overlay3 {
+  background: linear-gradient(rgba(0, 0, 0, 0), white);
+  /* background: red; */
+  height: 100px;
+  width: 600px;
+  z-index: 2;
+  position: absolute;
+  right: 4rem;
+  top: 36.5rem;
+}
+.headshot-overlay4 {
+  background: linear-gradient(rgba(0, 0, 0, 0), white);
+  /* background: red; */
+  height: 100px;
+  width: 600px;
+  z-index: 2;
+  position: absolute;
+  right: 4rem;
+  top: 36.7rem;
 }
 
 
 
+
 #homepage-arrow {
-  position: fixed;
-  bottom: 10px;
-  left: 48.25%;
+  position: absolute;
+  top: 710px;
+  left: 49.25%;
   height: 3rem;
   width: auto;
-  border-radius: 50%;
-  z-index: 10;
+  border-radius: 5px;
+  z-index: 3;
 }
 
 
@@ -217,6 +248,10 @@ header {
 .timeline {
   /* background-color: red; */
   height: 1800px;
+  background: url(./images/dark-sleek.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .heading-placeholder {
@@ -231,10 +266,7 @@ header {
   border: solid black;
   margin-top: 5rem;
   /* background: linear-gradient(rgb(54, 52, 52), rgb(104, 104, 104)); */
-  background: url(./images/map.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  
 }
 
 .timeline-title {
@@ -251,10 +283,10 @@ header {
 }
 
 .resume-here {
-  background: rgb(168, 0, 0);
+  background: rgb(255, 255, 255);
   height: 30px;
   width: 100px;
-  color: white;
+  color: black;
   margin-bottom: 0;
   font-size: 1rem;
   border-radius: 5px;
@@ -280,7 +312,6 @@ header {
 .timeline-item {
   height: 10rem;
   width: 25rem;
-  border: solid rgb(48, 48, 48);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -288,43 +319,48 @@ header {
   color: rgb(230, 230, 230);
   background: rgb(71, 71, 71);
   cursor: pointer;
+  padding: 0 20px;
+  padding-bottom: 2px;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .timeline-item h4 {
-  background: url('./images/white-sleek.jpeg');
+  /* background: url('./images/white-sleek.jpeg'); */
   width: 100%;
   height: 40px;
-  color: rgb(168, 0, 0);
+  /* color: rgb(168, 0, 0); */
 
 }
 
-.timeline-item h4,
-.timeline-item img {
+.timeline-item h4
+ {
   margin-bottom: 0px;
-  text-align: center;
+  margin-top: 0px;
+  text-align: left;
+  font-family: 'Cairo';
 }
 .timeline-item h6 {
-  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: 'Cairo';
 }
 
 .year-left {
-  color: rgb(230, 230, 230);
+  color: rgb(102, 110, 117);
+  background: rgb(255, 255, 255);
   z-index: 2;
-  /* margin-right: 50rem;
-  margin-bottom: 10px; */
-  background: rgb(168, 0, 0);
-  padding: 4px;
   border-radius: 5px;
-  
+  font-family: 'Cairo';
+  padding: 0px 3px;
 }
 .year-right {
-  color: rgb(230, 230, 230);
-  /* margin-left: 50rem;
-  margin-bottom: 10px; */
+  color: rgb(102, 110, 117);
+  background: rgb(255, 255, 255);
   z-index: 2;
-  background: rgb(168, 0, 0);
-  padding: 4px;
   border-radius: 5px;
+  font-family: 'Cairo';
+  font-size: 1rem;
+  padding: 0px 2px;
 }
 
 
@@ -332,11 +368,40 @@ header {
 
 .top-item {
   margin-right: 40rem;
-  border-radius: 30px 0 30px 30px;
+  transform: translateX(-100px);
+  transition: all .5s ease-in-out;
+  position: relative;
 }
+
+.top-item::after {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid rgb(71, 71, 71);
+  content: "";
+  transform: rotate(90deg);
+  position: absolute;
+  right: -10px;
+  top: -.25px;
+}
+.bottom-item::after {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid rgb(71, 71, 71);
+  content: "";
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -10px;
+  top: -.25px;
+}
+
 .bottom-item {
   margin-left: 40rem;
-  border-radius: 0 30px 30px 30px;
+  transform: translateX(100px);
+  transition: all .5s ease-in-out;
 }
 
 .blip {
@@ -349,20 +414,20 @@ header {
   border: rgb(172, 172, 172) solid 3px;
   background: white;
   z-index: 2;
-  /* bottom: 50%; */
 }
 
 .top-item .blip {
   margin-left: 40rem;
 }
+
 .bottom-item .blip {
   margin-right: 40rem;
 }
 
 
 .timeline-bar {
-  width: 100%;
-  height: 5px;
+  width: 105%;
+  height: 2px;
   border-radius: 10px;
   background: rgb(230, 230, 230);
   position: absolute;
@@ -379,8 +444,12 @@ header {
   
 }
 
-.second-line {
+#second-line {
   margin-top: 0;
+}
+#first-line {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 /* Projects Sections */
@@ -417,6 +486,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+  padding: 20px;
 }
 
 .project-image {
@@ -432,7 +503,6 @@ header {
 }
 
 .proj-name {
-  margin-top: 0;
   text-align: center;
 }
 
@@ -440,6 +510,7 @@ header {
   background: url(./images/white-sleek.png);
   height: 50px;
   width: 100%;
+  border-radius: 5px;
 }
 
 .tech-used p {
@@ -447,6 +518,7 @@ header {
   color: white;
   font-size: 12px;
 }
+
 
 /* About me Section */
 
@@ -563,7 +635,7 @@ header {
 /* footer section */
 
 footer {
-  background: rgb(168, 0, 0);
+  background:rgb(102, 110, 117);
   height: 100px;
   display: flex;
   justify-content: flex-end;
@@ -578,4 +650,58 @@ footer img {
   background: white;
   border-radius: 5px;
   margin-right: 5px;
+}
+
+
+
+/* HOVER STATES */
+.navbar-list li:hover,
+.contact-heading:hover,
+.title-buttons a:hover {
+  border-bottom: rgb(102, 110, 117) ridge;
+  border-width: 2px;
+  transition: border ease-in-out .5s;
+}
+
+.mail-float a img:hover,
+.linkedin-float a img:hover {
+  border: solid rgb(168, 0, 0);
+  border-width: 3px;
+}
+
+footer img,
+footer p {
+  cursor: pointer;
+}
+
+.social-buttons .btn:hover {
+  background: rgb(168, 0, 0);
+}
+
+/* Show timeline items */
+.timeline-item.show {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.profession::after {
+  background: black;
+  height: 45px;
+  width: 4px;
+  z-index: 2;
+  content: " ";
+  position: absolute;
+  margin-left: .2rem;
+  animation: blink 0.7s infinite ease;
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

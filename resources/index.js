@@ -33,7 +33,7 @@ window.addEventListener('scroll', run);
 
 
 (function typeTitleOut() {
-  const texts = ['Developer', 'Problem Solver', 'Learner'];
+  const texts = ['Developer', 'Problem Solver', 'Student of Life'];
   let count = 0;
   let index = 0;
   let currentText = "";
@@ -54,3 +54,145 @@ window.addEventListener('scroll', run);
     setTimeout(type, 150);
   })()
 })()
+
+
+// PROJECT SECTION
+
+const projects = document.querySelectorAll('.project-item');
+
+const projectHover = (e) => {
+  console.log(e.target);
+  card = e.target;
+  // hide the desc
+  const origMessage = card.querySelector('.visible-desc');
+  origMessage.style.display = 'none';
+  card.querySelector('.used').style.display = 'none';
+  console.log(origMessage)
+
+  // display the new desc
+  card.querySelector('.hidden-desc').style.display = 'contents';
+  card.querySelector('.source').style.display = 'contents';
+
+  //Make title visible
+  card.querySelector('.proj-name').style.color = 'black';
+}
+
+
+
+const projectReturn = (e) => {
+  console.log(e.target);
+  card = e.target;
+  // show the desc
+  const origMessage = card.querySelector('.visible-desc');
+  origMessage.style.display = 'contents';
+  card.querySelector('.used').style.display = 'contents'
+  console.log(origMessage)
+
+  // hide the new desc
+  card.querySelector('.hidden-desc').style.display = 'none';
+  card.querySelector('.source').style.display = 'none';
+
+  //Make title visible
+  card.querySelector('.proj-name').style.color = 'white';
+
+}
+
+
+
+projects.forEach(project => {
+  project.addEventListener('mouseenter', projectHover);
+  project.addEventListener('mouseleave', projectReturn);
+})
+
+
+
+
+// ABOUT ME SECTION
+
+// buttons
+const aboutButtonOne = document.querySelector('.btn1');
+const aboutButtonTwo = document.querySelector('.btn2');
+const aboutButtonThree = document.querySelector('.btn3');
+
+// descriptions
+const buttonOneDesc = document.querySelector('.description-one p');
+const buttonTwoDesc = document.querySelector('.description-two p');
+const buttonThreeDesc = document.querySelector('.description-three p');
+
+// Display none to show the default description
+buttonTwoDesc.style.display = "none";
+buttonThreeDesc.style.display = "none";
+aboutButtonOne.style.color = 'black';
+
+// functions to display desc on clicks
+const displayDesc = (e) => {
+  switch (e.target) {
+    case aboutButtonOne:
+      console.log(buttonOneDesc)
+      // change button color
+      aboutButtonOne.style.background = "white";
+      aboutButtonOne.style.color = "black";
+
+      aboutButtonThree.style.background = "black";
+      aboutButtonThree.style.color = "white";
+      aboutButtonTwo.style.background = "black";
+      aboutButtonTwo.style.color = "white";
+
+      // change desc contents
+      buttonOneDesc.style.display = "contents";
+      buttonTwoDesc.style.display = "none";
+      buttonThreeDesc.style.display = "none";
+      break;
+
+    case aboutButtonTwo:
+      console.log(buttonTwoDesc)
+      // change button color
+      aboutButtonTwo.style.background = "white";
+      aboutButtonTwo.style.color = "black";
+
+      aboutButtonThree.style.background = "black";
+      aboutButtonThree.style.color = "white";
+      aboutButtonOne.style.background = "black";
+      aboutButtonOne.style.color = "white";
+
+
+      // change desc contents
+      buttonOneDesc.style.display = "none";
+      buttonTwoDesc.style.display = "contents";
+      buttonThreeDesc.style.display = "none";
+
+      break;
+    case aboutButtonThree:
+      console.log(buttonThreeDesc)
+      // change button color
+      aboutButtonThree.style.background = "white";
+      aboutButtonThree.style.color = "black";
+
+      aboutButtonTwo.style.background = "black";
+      aboutButtonTwo.style.color = "white";
+      aboutButtonOne.style.background = "black";
+      aboutButtonOne.style.color = "white";
+
+
+
+      // change desc contents
+      buttonOneDesc.style.display = "none";
+      buttonTwoDesc.style.display = "none";
+      buttonThreeDesc.style.display = "contents"
+      break;
+    default:
+      console.log(e.target)
+      buttonOneDesc.style.display = "contents";
+      buttonTwoDesc.style.display = "none";
+      buttonThreeDesc.style.display = "none";
+  }
+
+}
+
+aboutButtonOne.addEventListener('click', displayDesc)
+aboutButtonTwo.addEventListener('click', displayDesc)
+aboutButtonThree.addEventListener('click', displayDesc)
+
+
+
+

@@ -16,13 +16,12 @@
 </head>
 
 <body>
-  <div class="backdrop-stripe"></div>
   <div class="main-content">
     <header>
       <nav class="navbar">
         <div class="contact-heading">
           <img src="./resources/images/j.png" alt="" id="j-logo">
-          <h4><a href="#">Jordan Mbanefo</a></h4>
+          <h4><a id="name-link" href="#">Jordan Mbanefo</a></h4>
         </div>
         <ul class="navbar-list">
           <li><a class="nav-links" href="#location-skills">
@@ -37,6 +36,7 @@
           <li><a class="nav-links" href="#location-about">
               <h4>About Me & Contact</h4>
             </a></li>
+          <div id="mobile-menu"></div>
         </ul>
       </nav>
     </header>
@@ -51,18 +51,19 @@
           School of Business, I was able to leverage my leisure time to learn programming skills that
           I now
           use full time to ensure efficiency and effectiveness on a day to day basis.</p>
+        <p class="title-desc-mobile">Software Developer based out of New York City</p>
         <div class="title-buttons">
           <a href="#location-about-me" class="about btn">Learn About Me</a>
           <a href="#location-projects" class="projects btn">View Projects</a>
         </div>
       </div>
-      <div class="headshot-overlay1"></div>
-      <div class="headshot-overlay2"></div>
-      <div class="headshot-overlay3"></div>
-      <div class="headshot-overlay4"></div>
-      <div class="headshot-overlay5"></div>
-      <div class="headshot-overlay6"></div>
-      <div class="headshot-overlay7"></div>
+      <div class="headshot-overlay1 ho"></div>
+      <div class="headshot-overlay2 ho"></div>
+      <div class="headshot-overlay3 ho"></div>
+      <div class="headshot-overlay4 ho"></div>
+      <div class="headshot-overlay5 ho"></div>
+      <div class="headshot-overlay6 ho"></div>
+      <div class="headshot-overlay7 ho"></div>
       <div class="headshot-container"></div>
       <a href="#location-skills" id="down-arrow-home">
         <img src="./resources/images/mouse-scroll.gif" alt="" id="homepage-arrow">
@@ -85,6 +86,15 @@
             <div class="img img7"></div>
           </div>
         </div>
+        <div class="mobile-skills">
+          <p class="skill python">Python</p>
+          <p class="skill pyspark">Pyspark</p>
+          <p class="skill html">HTML</p>
+          <p class="skill css">CSS</p>
+          <p class="skill javascript">JavaScript</p>
+          <p class="skill sql">SQL</p>
+          <p class="skill react">React</p>
+        </div>
 
       </div>
     </section>
@@ -95,7 +105,7 @@
           <p class="experience-title">
             Experience <span class="resume-here">Resume Here</span>
           </p>
-          <h1 class="timeline-title">Knowledge Timeline</h1>
+          <h1 class="timeline-title">Knowledge <span>Timeline</span> </h1>
         </div>
         <div class="timeline-items">
           <h4 class="year-left year-blip">Summer 2018</h4>
@@ -321,7 +331,7 @@
         </div>
 
         <div class="about-me-content">
-          <div class="about-me-title">
+          <div id="location-about-me" class="about-me-title">
             <h1>Learn About my Journey!</h1>
           </div>
           <div class="about-me-default-description">

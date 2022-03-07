@@ -1,4 +1,4 @@
-# Personal_Portfolio
+# Personal Portfolio
 This portfolio has been created for recruitment purposes.
 
 Utilizing web design inspirations I have seen on the internet, I have tried to recreate the best pieces of my favorite websites.

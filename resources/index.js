@@ -56,6 +56,8 @@ window.addEventListener('scroll', run);
 })()
 
 
+
+
 // PROJECT SECTION
 
 const projects = document.querySelectorAll('.project-item');
@@ -196,3 +198,33 @@ aboutButtonThree.addEventListener('click', displayDesc)
 
 
 
+// mobile menu
+const navBar = document.querySelector('.navbar-list');
+const hamburgerMenu = document.querySelector('#mobile-menu');
+
+
+const showNavMobile = () => {
+  navBar.style.display = 'flex';
+}
+
+const showNavDesktop = () => {
+  if (window.innerWidth <= 978) {
+    return
+  }
+  navBar.style.display = 'flex';
+}
+
+const hideNavMobile = () => {
+  if (window.innerWidth > 978) {
+    navBar.style.display = 'flex';
+    return
+  } else {
+    navBar.style.display = 'none';
+  }
+}
+
+
+hamburgerMenu.addEventListener('click', showNavMobile);
+navBar.addEventListener('mouseleave', hideNavMobile);
+window.addEventListener('resize', showNavDesktop);
+window.addEventListener('resize', hideNavMobile);

@@ -103,6 +103,7 @@ const projectReturn = (e) => {
 
 projects.forEach(project => {
   project.addEventListener('mouseenter', projectHover);
+  project.addEventListener('touch', projectHover);
   project.addEventListener('mouseleave', projectReturn);
 })
 
@@ -225,6 +226,8 @@ const hideNavMobile = () => {
 
 
 hamburgerMenu.addEventListener('click', showNavMobile);
+hamburgerMenu.addEventListener('mouseover', showNavMobile);
+hamburgerMenu.addEventListener('touch', showNavMobile);
 navBar.addEventListener('mouseleave', hideNavMobile);
 window.addEventListener('resize', showNavDesktop);
 window.addEventListener('resize', hideNavMobile);

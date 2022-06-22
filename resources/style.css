@@ -1,4 +1,3 @@
-
 html {
   margin: 0;
   padding: 0;
@@ -29,7 +28,8 @@ body {
   margin: auto;
   width: auto;
 }
-body a{
+
+body a {
   text-decoration: none;
   color: black;
 }
@@ -38,8 +38,9 @@ body a{
   background-color: white;
   height: 4rem;
 }
+
 .heading-placeholder#location-projects {
-  background: linear-gradient(rgb(8, 8, 8), rgb(20, 20, 20)) ;
+  background: linear-gradient(rgb(8, 8, 8), rgb(20, 20, 20));
   height: 4rem;
 }
 
@@ -53,7 +54,7 @@ body a{
   height: auto;
   width: 1200px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 7px 7px rgba(255, 255, 255,0), -7px 7px 7px black;
+  box-shadow: 7px 7px rgba(255, 255, 255, 0), -7px 7px 7px black;
   color: black;
   border-radius: 5px;
 }
@@ -65,7 +66,7 @@ header {
   z-index: 10;
   border-radius: 5;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   background: linear-gradient(rgb(255, 255, 255), rgb(247, 247, 247));
   height: 4.5rem;
   border-radius: 0 0 5px 5px;
@@ -153,7 +154,7 @@ header {
   padding-left: 70px;
 }
 
-#name, 
+#name,
 .title-desc {
   color: rgb(146, 141, 141);
   letter-spacing: .05rem;
@@ -197,7 +198,7 @@ header {
 
 .headshot-container {
   width: 50%;
-  background-image:url(./images/crop2.png);
+  background-image: url(./images/crop2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
@@ -218,6 +219,7 @@ header {
   right: 4rem;
   top: 36.5rem;
 }
+
 .headshot-overlay4 {
   background: linear-gradient(rgba(0, 0, 0, 0), white);
   /* background: red; */
@@ -304,36 +306,42 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .row .img2 {
   background: url(./images/pyspark-logo.png);
   background-position: center;
   background-size: 190%;
   background-repeat: no-repeat;
 }
+
 .row .img3 {
   background: url(./images/html-logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .row .img4 {
   background: url(./images/css-logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .row .img5 {
   background: url(./images/javascript-logo.jpeg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .row .img6 {
   background: url(./images/sql-logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .row .img7 {
   background: url(./images/react-logo.png);
   background-position: center;
@@ -346,31 +354,37 @@ header {
   position: absolute;
   bottom: -1.5rem;
 }
+
 .row .img2:after {
   content: "PySpark";
   position: absolute;
   bottom: -1.5rem;
 }
+
 .row .img3:after {
   content: "HTML";
   position: absolute;
   bottom: -1.5rem;
 }
+
 .row .img4:after {
   content: "CSS";
   position: absolute;
   bottom: -1.5rem;
 }
+
 .row .img5:after {
   content: "JavaScript";
   position: absolute;
   bottom: -1.5rem;
 }
+
 .row .img6:after {
   content: "SQL";
   position: absolute;
   bottom: -1.5rem;
 }
+
 .row .img7:after {
   content: "React";
   position: absolute;
@@ -395,7 +409,7 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
-  
+
 }
 
 .timeline-title {
@@ -432,7 +446,7 @@ header {
 
 .timeline-items {
   display: flex;
-  flex-direction:  column;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   margin-top: 1rem;
@@ -454,6 +468,7 @@ header {
   visibility: hidden;
   opacity: 0;
 }
+
 .tech-desc p {
   margin: 0;
   font-size: 13px;
@@ -463,13 +478,13 @@ header {
 
 
 
-.timeline-item h4
- {
+.timeline-item h4 {
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: left;
   font-family: 'Cairo';
 }
+
 .timeline-item h6 {
   margin-top: 5px;
   font-family: 'Cairo';
@@ -534,6 +549,7 @@ header {
   right: -10px;
   top: -.25px;
 }
+
 .bottom-item::after {
   width: 0;
   height: 0;
@@ -569,10 +585,10 @@ header {
 .timeline-item img {
   height: 50px;
   width: 50px;
-  border-radius:50%;
+  border-radius: 50%;
   background: rgb(230, 230, 230);
   border: rgb(172, 172, 172) solid 1.5px;
-  
+
 }
 
 
@@ -581,6 +597,7 @@ header {
 section.projects {
   background: rgb(20, 20, 20);
 }
+
 .projects-title {
   color: white;
   font-size: 40px;
@@ -633,12 +650,14 @@ section.projects {
   justify-content: space-between;
   cursor: pointer;
   padding: 20px;
+  position: relative;
 }
 
 .project-description {
   color: white;
   font-family: Rubik;
 }
+
 .hidden-desc {
   color: black;
   font-family: Rubik;
@@ -659,6 +678,32 @@ section.projects {
 
 .proj1::after {
   content: "";
+  background: url(./images/key-icon.png);
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -1rem;
+  border: solid white 3px;
+}
+
+.proj2::after {
+  content: "";
+  background: url(./images/support-ticket-icon.png);
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -1rem;
+  border: solid white 3px;
+}
+
+.proj3::after {
+  content: "";
   background: url(./images/stock-icon.jpeg);
   background-size: contain;
   background-position: center;
@@ -667,6 +712,34 @@ section.projects {
   width: 2rem;
   position: absolute;
   top: -1rem;
+  border: solid white 3px;
+}
+
+
+.proj4::after {
+  content: "";
+  background: url(./images/intsta-git.png);
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -1rem;
+  border: solid white 3px;
+}
+
+.proj5::after {
+  content: "";
+  background: url(./images/check-icon.png);
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -1rem;
+  border: solid white 3px;
 }
 
 .proj-name {
@@ -690,6 +763,7 @@ section.projects {
   font-size: 12px;
   font-family: Rubik;
 }
+
 .tech-used .source {
   text-align: center;
   color: black;
@@ -797,6 +871,7 @@ section.projects {
   border: solid rgb(0, 0, 0) 5px;
   color: rgb(0, 0, 0);
 }
+
 .btn2,
 .btn3 {
   border: solid rgb(0, 0, 0) 5px;
@@ -821,7 +896,7 @@ section.projects {
 /* footer section */
 
 footer {
-  background:rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
   height: 100px;
   display: flex;
   justify-content: flex-end;
@@ -899,6 +974,7 @@ footer p {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -909,21 +985,23 @@ footer p {
   transition: ease-in-out .5s;
 }
 
-  /* MEDIA QUERIES */
+/* MEDIA QUERIES */
 
-  @media only screen and (max-width: 1170px){
-    nav {
-      max-width: 95%;
-    }
-    .top-item{
-      transform: translateX(0);
-    }
-    .bottom-item{
-      transform: translateX(0);
-    }
+@media only screen and (max-width: 1170px) {
+  nav {
+    max-width: 95%;
   }
 
-@media only screen and (max-width: 1280px){
+  .top-item {
+    transform: translateX(0);
+  }
+
+  .bottom-item {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 1280px) {
 
   .main-content {
     box-shadow: none;
@@ -943,6 +1021,7 @@ footer p {
   .headshot-overlay3 {
     top: 37.2rem;
   }
+
   .headshot-overlay4 {
     top: 37.4rem;
   }
@@ -951,7 +1030,7 @@ footer p {
     transform: translateX(0);
     visibility: show;
   }
-  
+
 
 }
 
@@ -965,6 +1044,7 @@ footer p {
   .top-item {
     margin-right: 32rem;
   }
+
   .bottom-item {
     margin-left: 32rem;
   }
@@ -979,6 +1059,7 @@ footer p {
     width: 115%;
   }
 }
+
 @media only screen and (max-width: 978px) {
   html {
     max-width: 100%;
@@ -990,7 +1071,7 @@ footer p {
     overflow-x: hidden;
   }
 
-  
+
 
   body {
     width: 100%;
@@ -1055,7 +1136,7 @@ footer p {
     position: absolute;
     transform: rotate(90deg);
   }
-  
+
   .main-content {
     margin-top: 0px;
     max-width: 100%;
@@ -1102,7 +1183,7 @@ footer p {
     justify-content: center;
   }
 
-  
+
 
   .homepage {
     margin: 0px;
@@ -1115,7 +1196,7 @@ footer p {
 
   .homepage::after {
     position: absolute;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, .7);
     height: 100%;
     width: 100%;
     content: "";
@@ -1168,7 +1249,7 @@ footer p {
   #homepage-arrow,
   .title-buttons,
   h1.profession,
-  .heading-placeholder{
+  .heading-placeholder {
     display: none;
   }
 
@@ -1187,7 +1268,7 @@ footer p {
 
   .skills-container .row .img,
   .first.row,
-  .second.row{
+  .second.row {
     display: none;
   }
 
@@ -1197,12 +1278,12 @@ footer p {
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
-    width: 100px;
+    width: 150px;
   }
 
-  .skill{
+  .skill {
     background: black;
-    color:white;
+    color: white;
     padding: 2px, 3px;
     border-radius: 5px;
   }
@@ -1270,14 +1351,14 @@ footer p {
   }
 
   .timeline-item::after,
-   .year-blip::after{
+  .year-blip::after {
     display: none;
   }
 
   .timeline-bar {
     display: none;
   }
-  
+
 
   /* Projects Section */
 
@@ -1291,7 +1372,7 @@ footer p {
       position: relative;
       margin-top: -50px;
       padding-bottom: 50px;
-      }
+    }
   }
 
   /* about me section */
@@ -1341,7 +1422,7 @@ footer p {
   }
 
 
-  
+
   .title-desc {
     display: none;
   }

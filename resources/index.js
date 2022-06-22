@@ -87,7 +87,7 @@ const projectReturn = (e) => {
   // show the desc
   const origMessage = card.querySelector('.visible-desc');
   origMessage.style.display = 'contents';
-  card.querySelector('.used').style.display = 'contents'
+  card.querySelector('.used').style.display = 'contents';
   console.log(origMessage)
 
   // hide the new desc

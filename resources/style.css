@@ -741,6 +741,20 @@ section.projects {
   border: solid white 3px;
 }
 
+.proj6::after {
+  content: "";
+  background: url(./images/cartpoollogo.png);
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -1rem;
+  border: solid white 3px;
+  background-color: white;
+}
+
 .proj-name {
   text-align: center;
 }

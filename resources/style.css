@@ -5,7 +5,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background: linear-gradient(rgb(102, 110, 117), rgb(180, 180, 182));
+  background: white;
   overflow-x: hidden;
   scroll-behavior: smooth;
   display: flex;
@@ -54,7 +54,6 @@ body a {
   height: auto;
   width: 1200px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 7px 7px rgba(255, 255, 255, 0), -7px 7px 7px black;
   color: black;
   border-radius: 5px;
 }

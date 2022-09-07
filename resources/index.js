@@ -103,7 +103,8 @@ const projectReturn = (e) => {
 
 projects.forEach(project => {
   project.addEventListener('mouseenter', projectHover);
-  project.addEventListener('touch', projectHover);
+  project.addEventListener('touchstart', projectHover);
+  project.addEventListener('touchcancel', projectReturn);
   project.addEventListener('mouseleave', projectReturn);
 })
 

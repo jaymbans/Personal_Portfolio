@@ -634,6 +634,7 @@ section.projects {
   padding-bottom: 20px;
 }
 
+
 @media only screen and (max-width: 1200px) {
   .projects-grid {
     grid-template: repeat(3, 350px) / repeat(2, 300px);

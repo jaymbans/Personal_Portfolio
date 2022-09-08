@@ -67,9 +67,10 @@ const projectHover = (e) => {
   card = e.target;
   // hide the desc
   const origMessage = card.querySelector('.visible-desc');
+  console.log(`origMessage is: ${origMessage}`)
   origMessage.style.display = 'none';
   card.querySelector('.used').style.display = 'none';
-  console.log(origMessage)
+
 
   // display the new desc
   card.querySelector('.hidden-desc').style.display = 'contents';
@@ -86,9 +87,10 @@ const projectReturn = (e) => {
   card = e.target;
   // show the desc
   const origMessage = card.querySelector('.visible-desc');
+  console.log(origMessage)
   origMessage.style.display = 'contents';
   card.querySelector('.used').style.display = 'contents';
-  console.log(origMessage)
+
 
   // hide the new desc
   card.querySelector('.hidden-desc').style.display = 'none';
@@ -103,8 +105,6 @@ const projectReturn = (e) => {
 
 projects.forEach(project => {
   project.addEventListener('mouseenter', projectHover);
-  project.addEventListener('touchstart', projectHover);
-  project.addEventListener('touchcancel', projectReturn);
   project.addEventListener('mouseleave', projectReturn);
 })
 

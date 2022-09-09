@@ -994,12 +994,14 @@ footer p {
   }
 }
 
+
 .project-item:hover {
-  background: white;
   transition: ease-in-out .5s;
 }
 
 /* MEDIA QUERIES */
+@media only screen and (min-width: 1170px) {}
+
 
 @media only screen and (max-width: 1170px) {
   nav {

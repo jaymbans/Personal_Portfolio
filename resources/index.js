@@ -29,9 +29,6 @@ window.addEventListener('scroll', run);
 
 
 // Function for typing
-
-
-
 (function typeTitleOut() {
   const texts = ['Developer', 'Problem Solver', 'Student of Life'];
   let count = 0;
@@ -60,13 +57,20 @@ window.addEventListener('scroll', run);
 
 // PROJECT SECTION
 
+
 const projects = document.querySelectorAll('.project-item');
 
 const projectHover = (e) => {
-  console.log(e.target);
+
   let card = e.target;
+  while (![...card.classList].includes('project-item')) {
+    card = card.parentNode
+  }
+
+  card.style.background = 'white';
+
   // hide the desc
-  const origMessage = card.querySelector('.visible-desc');
+  const origMessage = card.querySelector('.visible-desc') || card.parentNode.querySelector('.visible-desc');
   origMessage.style.display = 'none';
   card.querySelector('.used').style.display = 'none';
 
@@ -77,16 +81,27 @@ const projectHover = (e) => {
 
   //Make title visible
   card.querySelector('.proj-name').style.color = 'black';
+
+  card.removeEventListener('touch', projectHover)
+  card.removeEventListener('mouseenter', projectHover)
+
+  card.addEventListener('touch', projectReturn)
+  card.addEventListener('mouseleave', projectReturn)
 }
 
 
 
 const projectReturn = (e) => {
-  console.log(e.target);
+
+
   let card = e.target;
+  while (![...card.classList].includes('project-item')) {
+    card = card.parentNode
+  }
+
+  card.style.background = 'none';
   // show the desc
   const origMessage = card.querySelector('.visible-desc');
-  console.log(origMessage)
   origMessage.style.display = 'contents';
   card.querySelector('.used').style.display = 'contents';
 
@@ -98,17 +113,20 @@ const projectReturn = (e) => {
   //Make title visible
   card.querySelector('.proj-name').style.color = 'white';
 
+
+  card.removeEventListener('touch', projectReturn)
+  card.removeEventListener('mouseleave', projectReturn)
+
+  card.addEventListener('touch', projectHover)
+  card.addEventListener('mouseenter', projectHover)
 }
 
 
 
 projects.forEach(project => {
-  // project.addEventListener('mouseenter', projectHover);
-  // project.addEventListener('mouseleave', projectReturn);
-  project.addEventListener('pointerenter', projectHover);
-  project.addEventListener('pointerleave', projectReturn);
+  project.addEventListener('touch', projectHover);
+  project.addEventListener('mouseenter', projectHover);
 })
-
 
 
 
@@ -133,7 +151,7 @@ aboutButtonOne.style.color = 'black';
 const displayDesc = (e) => {
   switch (e.target) {
     case aboutButtonOne:
-      console.log(buttonOneDesc)
+
       // change button color
       aboutButtonOne.style.background = "white";
       aboutButtonOne.style.color = "black";

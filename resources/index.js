@@ -64,10 +64,9 @@ const projects = document.querySelectorAll('.project-item');
 
 const projectHover = (e) => {
   console.log(e.target);
-  card = e.target;
+  let card = e.target;
   // hide the desc
   const origMessage = card.querySelector('.visible-desc');
-  console.log(`origMessage is: ${origMessage}`)
   origMessage.style.display = 'none';
   card.querySelector('.used').style.display = 'none';
 
@@ -84,7 +83,7 @@ const projectHover = (e) => {
 
 const projectReturn = (e) => {
   console.log(e.target);
-  card = e.target;
+  let card = e.target;
   // show the desc
   const origMessage = card.querySelector('.visible-desc');
   console.log(origMessage)
@@ -104,8 +103,10 @@ const projectReturn = (e) => {
 
 
 projects.forEach(project => {
-  project.addEventListener('mouseenter', projectHover);
-  project.addEventListener('mouseleave', projectReturn);
+  // project.addEventListener('mouseenter', projectHover);
+  // project.addEventListener('mouseleave', projectReturn);
+  project.addEventListener('pointerenter', projectHover);
+  project.addEventListener('pointerleave', projectReturn);
 })
 
 

@@ -29,6 +29,8 @@ window.addEventListener('scroll', run);
 
 
 // Function for typing
+
+
 (function typeTitleOut() {
   const texts = ['Developer', 'Problem Solver', 'Student of Life'];
   let count = 0;
@@ -82,11 +84,8 @@ const projectHover = (e) => {
   //Make title visible
   card.querySelector('.proj-name').style.color = 'black';
 
-  card.removeEventListener('touch', projectHover)
-  card.removeEventListener('mouseenter', projectHover)
-
-  card.addEventListener('touch', projectReturn)
-  card.addEventListener('mouseleave', projectReturn)
+  card.removeEventListener('click', projectHover)
+  card.addEventListener('click', projectReturn)
 }
 
 
@@ -114,18 +113,14 @@ const projectReturn = (e) => {
   card.querySelector('.proj-name').style.color = 'white';
 
 
-  card.removeEventListener('touch', projectReturn)
-  card.removeEventListener('mouseleave', projectReturn)
-
-  card.addEventListener('touch', projectHover)
-  card.addEventListener('mouseenter', projectHover)
+  card.removeEventListener('click', projectReturn)
+  card.addEventListener('click', projectHover)
 }
 
 
 
 projects.forEach(project => {
-  project.addEventListener('touch', projectHover);
-  project.addEventListener('mouseenter', projectHover);
+  project.addEventListener('click', projectHover);
 })
 
 

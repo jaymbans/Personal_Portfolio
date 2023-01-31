@@ -651,6 +651,7 @@ section.projects {
   cursor: pointer;
   padding: 20px;
   position: relative;
+  height: 288px;
 }
 
 .project-description {
@@ -676,7 +677,7 @@ section.projects {
   align-items: center
 }
 
-.proj1::after {
+.at-lease::after {
   content: "";
   background: url(./images/key-icon.png);
   background-size: contain;
@@ -689,7 +690,7 @@ section.projects {
   border: solid white 3px;
 }
 
-.proj2::after {
+.barber::after {
   content: "";
   background: url(./images/support-ticket-icon.png);
   background-size: contain;
@@ -702,7 +703,7 @@ section.projects {
   border: solid white 3px;
 }
 
-.proj3::after {
+.gme-algo::after {
   content: "";
   background: url(./images/stock-icon.jpeg);
   background-size: contain;
@@ -716,7 +717,7 @@ section.projects {
 }
 
 
-.proj4::after {
+.insta-git::after {
   content: "";
   background: url(./images/intsta-git.png);
   background-size: contain;
@@ -729,7 +730,7 @@ section.projects {
   border: solid white 3px;
 }
 
-.proj5::after {
+.nocrastination::after {
   content: "";
   background: url(./images/check-icon.png);
   background-size: contain;
@@ -742,9 +743,52 @@ section.projects {
   border: solid white 3px;
 }
 
-.proj6::after {
+.cartpool-lite::after {
   content: "";
   background: url(./images/cartpoollogo.png);
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -1rem;
+  border: solid white 3px;
+  background-color: white;
+}
+
+.twitter::after {
+  content: "";
+  background: url('https://i.pinimg.com/originals/5f/d0/53/5fd0537ef0cbf9efd48c975209f74a8c.png');
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -1rem;
+  border: solid white 3px;
+  background-color: white;
+}
+
+.random-reps::after {
+  content: "";
+  background: url('https://www.clipartmax.com/png/middle/161-1619060_dumbbell-clipart-black-dumbbell-icon-transparent-background.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -1rem;
+  border: solid white 3px;
+  background-color: white;
+}
+
+.photo::after {
+  content: "";
+  background: url('https://static.vecteezy.com/system/resources/previews/005/988/950/original/photo-camera-icon-free-vector.jpg');
   background-size: contain;
   background-position: center;
   border-radius: 50%;

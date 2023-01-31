@@ -78,8 +78,8 @@ const projectHover = (e) => {
 
 
   // display the new desc
-  card.querySelector('.hidden-desc').style.display = 'contents';
-  card.querySelector('.source').style.display = 'contents';
+  card.querySelector('.hidden-desc').style.display = 'block';
+  card.querySelector('.source').style.display = 'block';
 
   //Make title visible
   card.querySelector('.proj-name').style.color = 'black';
@@ -101,8 +101,8 @@ const projectReturn = (e) => {
   card.style.background = 'none';
   // show the desc
   const origMessage = card.querySelector('.visible-desc');
-  origMessage.style.display = 'contents';
-  card.querySelector('.used').style.display = 'contents';
+  origMessage.style.display = 'block';
+  card.querySelector('.used').style.display = 'block';
 
 
   // hide the new desc
